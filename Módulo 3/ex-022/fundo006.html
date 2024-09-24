@@ -3,21 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posicionamento</title>
+    <title>Fundo fixo de Tela</title>
   </head>
   <style>
     body {
       height: 100vh;
+      /*
+      Configurações sem um shorthand:
+
       background-color: black;
       background-image: url("images/wallpaper002.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover;
+      background-attachment: fixed; */
+
+      /*Shorthand - Background
+    color > image > position > repeat > [size] > attachment
+  
+    Obs: Quanto ao size, devemos ter cuidado. Segundo a regra, poderiamos inclui-lo no shorthand na ordem informada acima, porém, assim como aconteceu neste dia em que escrevo este comentário, a possibilidade de erro é muito grande, portanto, é melhor considerar colocá-lo fora do shorthand, por precaução.
+  */
+
+      background: black url("images/wallpaper002.jpg") center center no-repeat
+        fixed;
+      background-size: cover;
     }
 
     main {
       background-color: white;
-      width: 400px;
+      max-width: 400px;
       padding: 10px;
       margin: auto;
       border: 1px solid darkblue;
@@ -37,7 +51,34 @@
         Voluptate, earum. Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Asperiores, ipsa sapiente mollitia sit sint hic laborum
         voluptatibus iusto eaque! Consequuntur illo blanditiis ipsa saepe ab!
-        Iste, recusandae. Repudiandae, unde tenetur!
+        Iste, recusandae. Repudiandae, unde tenetur! Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Provident excepturi, neque delectus
+        blanditiis quidem quis repellendus odio ex iusto accusantium cumque
+        deserunt consequatur fuga quaerat sunt laboriosam. Similique, minus
+        excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Fugiat aliquid deserunt numquam quo nostrum, debitis deleniti quidem
+        quia atque cupiditate, sed eligendi eos ab maxime pariatur libero?
+        Quibusdam, sit inventore. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Dignissimos ipsam aspernatur tempora fuga consectetur
+        excepturi nisi a provident accusamus autem. Tempora, vitae amet! Ut
+        necessitatibus ducimus rerum praesentium illo sint. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Tempora harum tempore itaque fuga
+        iste perspiciatis doloribus quisquam aut cupiditate accusamus illum,
+        inventore reiciendis ipsam tenetur nostrum temporibus unde ea vero?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quae
+        voluptas. Laborum, ratione expedita quis maxime magnam rem, repellat
+        sint repellendus sunt natus earum debitis qui ipsa dicta. Voluptate,
+        earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Asperiores, ipsa sapiente mollitia sit sint hic laborum voluptatibus
+        iusto eaque! Consequuntur illo blanditiis ipsa saepe ab! Iste,
+        recusandae. Repudiandae, unde tenetur! Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Provident excepturi, neque delectus
+        blanditiis quidem quis repellendus odio ex iusto accusantium cumque
+        deserunt consequatur fuga quaerat sunt laboriosam. Similique, minus
+        excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Fugiat aliquid deserunt numquam quo nostrum, debitis deleniti quidem
+        quia atque cupiditate, sed eligendi eos ab maxime pariatur libero?
+        Quibusdam, sit inventore.
       </p>
     </main>
   </body>
