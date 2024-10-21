@@ -14,10 +14,21 @@
         border-collapse: collapse;
       }
 
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+      }
+
       td,
       th {
         border: 1px solid black;
         padding: 10px;
+      }
+
+      tbody > tr:nth-child(2n) {
+        background-color: lightgray;
       }
 
       th,
@@ -31,7 +42,8 @@
     <h1>População relativa aos estados brasileiros</h1>
     <!--Anatomia para tabelas grandes
     TABLE
-        THEAD
+    CAPTION    
+    THEAD
             TR,TD,TH
         TBODY
             TR, TD,TH
@@ -40,10 +52,13 @@
         -->
 
     <table>
+      <caption>
+        Unidades Federativas do Brasil
+      </caption>
       <thead>
         <tr>
-          <th>Estados</th>
-          <th>População</th>
+          <th scope="col">Estados</th>
+          <th scope="col" style="width: 50px">População</th>
         </tr>
       </thead>
       <tbody>
@@ -59,10 +74,15 @@
           <td>Rio de Janeiro</td>
           <td>17 219 679</td>
         </tr>
+
+        <tr id="Bahia">
+          <td>Bahia</td>
+          <td>14 873 064</td>
+        </tr>
       </tbody>
       <tfoot>
         <tr>
-          <th>Total da População</th>
+          <th scope="row">Total da População</th>
           <td>84,515,561</td>
         </tr>
       </tfoot>
