@@ -48,17 +48,46 @@
   </head>
   <body>
     <h1>População relativa aos estados brasileiros</h1>
-    <!--Anatomia para tabelas grandes
-    TABLE
-    CAPTION    
-    THEAD
-            TR,TD,TH
-        TBODY
-            TR, TD,TH
-        TFOOT
-            TR,TD,TH
-        -->
+    <!--Anatomia e funcionalidades das tabelas
+    
+    X---------TAGS BÁSICAS DE TABELAS---------X
 
+    * TABLE (A tabela em si, tag onde tudo está contido.)
+   
+    * CAPTION (Algo como um "subtítulo" da tabela.)
+    
+    * TR (Table row, utilizada para definir uma linha dentro da tabela.)
+    
+    * TH (Table header, utilizada exclusivamente para definir o cabeçalho da tabela.)
+
+    * TD (Table data, utilizaa para definir uma coluna dentro de uma tabela, ou, é onde adicionamos o "conteúdo" das células da tabela.)
+    
+    
+    X---------TAGS SEMÂNTICAS EM TABELAS--------X
+
+    * THEAD (Define o cabeçalho de uma tabela.)
+
+    * TBODY (Define a áre do corpo da tabela.)
+
+    *TFOOT (Define o rodapé da tabela.)
+    
+
+
+    X---------HIERARQUIA DAS TABELAS---------X
+
+    TABLE
+        CAPTION
+        THEAD
+            TR
+                TD,TH
+        TBODY
+            TR
+                TD,TH
+        TFOOT
+            TR
+                TD,TH    
+
+    -->
     <table>
       <caption>
         Unidades Federativas do Brasil
